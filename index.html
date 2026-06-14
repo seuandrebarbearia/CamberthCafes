@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Camberth Cafés Especiais: cafés, doces artesanais, croissants e brunch na Cachoeira do Bom Jesus, Florianópolis."
+    />
+    <meta name="theme-color" content="#173f36" />
+    <title>Camberth Cafés Especiais | Cardápio digital</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#cardapio" aria-label="Camberth Cafés Especiais">
+        <span class="brand-mark">C</span>
+        <span>
+          <strong>Camberth</strong>
+          <small>Cafés Especiais</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#informacoes">Informações</a>
+        <button class="nav-order" type="button" data-open-cart>
+          Pedido <span data-cart-count>0</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="intro-media" aria-hidden="true"></div>
+        <div class="intro-content">
+          <p class="eyebrow">café e doce artesanal</p>
+          <h1>Seu momento de café na Cachoeira do Bom Jesus.</h1>
+          <p>
+            Cafés especiais, doces artesanais, croissants e opções para um café da manhã
+            ou uma pausa no meio do dia.
+          </p>
+          <div class="intro-actions">
+            <a class="primary-action" href="#cardapio">Ver cardápio</a>
+            <a
+              class="secondary-action"
+              href="https://www.instagram.com/camberthcafe/"
+              target="_blank"
+              rel="noopener"
+            >Ver Instagram</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-strip" aria-label="Informações rápidas">
+        <div><strong>Cafés especiais</strong><span>Grãos e preparos selecionados</span></div>
+        <div><strong>Doces artesanais</strong><span>Tortas e sobremesas da casa</span></div>
+        <div><strong>Pedido mínimo R$ 10</strong><span>Retirada e entrega</span></div>
+        <div><strong>Cachoeira do Bom Jesus</strong><span>Florianópolis - SC</span></div>
+      </section>
+
+      <section class="menu-section" id="cardapio">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">escolha seu momento</p>
+            <h2>Cardápio Camberth</h2>
+          </div>
+          <p class="demo-notice">
+            Demonstração comercial. Itens e valores devem ser confirmados pela cafeteria.
+          </p>
+        </div>
+
+        <div class="filters" aria-label="Categorias do cardápio">
+          <button class="filter active" type="button" data-filter="todos">Todos</button>
+          <button class="filter" type="button" data-filter="cafes">Cafés</button>
+          <button class="filter" type="button" data-filter="brunch">Brunch</button>
+          <button class="filter" type="button" data-filter="doces">Doces</button>
+          <button class="filter" type="button" data-filter="especiais">Opções especiais</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="signature-band">
+        <div>
+          <p class="eyebrow">destaques da casa</p>
+          <h2>Café especial, croissant e doce artesanal.</h2>
+          <p>
+            Uma seleção inspirada nos produtos e nas avaliações públicas da Camberth,
+            pronta para ser ajustada com o cardápio oficial.
+          </p>
+        </div>
+        <div class="signature-images">
+          <img
+            src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=900&q=85"
+            alt="Café especial servido em xícara"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85"
+            alt="Croissants artesanais"
+          />
+        </div>
+      </section>
+
+      <section class="information" id="informacoes">
+        <div class="information-copy">
+          <p class="eyebrow">visite a Camberth</p>
+          <h2>Café especial perto da praia.</h2>
+          <p>
+            Rodovia Armando Calil Bulos, 7121, sala 1, Cachoeira do Bom Jesus,
+            Florianópolis - SC.
+          </p>
+          <div class="information-actions">
+            <a
+              class="primary-action"
+              href="https://wa.me/5548992080428?text=Ol%C3%A1%2C%20vi%20o%20card%C3%A1pio%20digital%20da%20Camberth%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o."
+              target="_blank"
+              rel="noopener"
+            >Chamar no WhatsApp</a>
+            <a
+              class="map-action"
+              href="https://www.google.com/maps/search/?api=1&query=Camberth%20Caf%C3%A9s%20Especiais%20Florian%C3%B3polis"
+              target="_blank"
+              rel="noopener"
+            >Abrir no mapa</a>
+          </div>
+        </div>
+
+        <div class="hours">
+          <p class="hours-title">Horários públicos encontrados</p>
+          <div><span>Segunda a sábado</span><strong>08:30 às 19:30</strong></div>
+          <div><span>Domingo</span><strong>08:30 às 11:30</strong></div>
+          <small>Confirme o funcionamento pelo WhatsApp antes de visitar.</small>
+        </div>
+      </section>
+    </main>
+
+    <button class="floating-cart" type="button" data-open-cart aria-label="Abrir pedido">
+      <span>Ver pedido</span>
+      <strong data-cart-total>R$ 0,00</strong>
+      <i data-cart-count>0</i>
+    </button>
+
+    <div class="cart-backdrop" id="cartBackdrop" hidden></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Seu pedido" aria-hidden="true">
+      <div class="drawer-header">
+        <div>
+          <p class="eyebrow">seu pedido</p>
+          <h2>Camberth</h2>
+          <span class="order-number" id="nextOrderNumber">Próximo pedido #0001</span>
+        </div>
+        <button class="icon-button" type="button" data-close-cart aria-label="Fechar pedido">×</button>
+      </div>
+
+      <div class="cart-list" id="cartList">
+        <p class="empty-cart">Escolha um item para começar.</p>
+      </div>
+
+      <button class="continue-order" type="button" data-close-cart>Continuar pedindo</button>
+
+      <div class="checkout-section">
+        <p class="checkout-title">Dados do cliente</p>
+        <label class="field">
+          <span>Nome completo *</span>
+          <input id="customerName" type="text" autocomplete="name" required />
+        </label>
+        <label class="field">
+          <span>CPF *</span>
+          <input id="customerCpf" type="text" inputmode="numeric" placeholder="000.000.000-00" required />
+        </label>
+      </div>
+
+      <div class="checkout-section">
+        <p class="checkout-title">Entrega ou retirada</p>
+        <label class="field">
+          <span>Como deseja receber? *</span>
+          <select id="deliveryMode">
+            <option value="retirada">Retirada no balcão</option>
+            <option value="entrega">Entrega</option>
+          </select>
+        </label>
+
+        <div class="address-group hidden" id="addressGroup">
+          <label class="field">
+            <span>Rua *</span>
+            <input id="street" type="text" autocomplete="street-address" />
+          </label>
+          <div class="field-row">
+            <label class="field">
+              <span>Número *</span>
+              <input id="addressNumber" type="text" inputmode="numeric" />
+            </label>
+            <label class="field">
+              <span>Complemento *</span>
+              <input id="addressComplement" type="text" placeholder="Casa, apto..." />
+            </label>
+          </div>
+          <label class="field">
+            <span>Bairro *</span>
+            <input id="district" type="text" />
+          </label>
+          <label class="field">
+            <span>Ponto de referência *</span>
+            <input id="referencePoint" type="text" />
+          </label>
+        </div>
+      </div>
+
+      <div class="checkout-section">
+        <p class="checkout-title">Pagamento</p>
+        <label class="field">
+          <span>Forma de pagamento *</span>
+          <select id="paymentMethod" required>
+            <option value="">Selecione</option>
+            <option value="Pix">Pix</option>
+            <option value="Dinheiro">Dinheiro</option>
+            <option value="Cartão na entrega">Cartão na entrega</option>
+          </select>
+        </label>
+        <label class="field hidden" id="changeGroup">
+          <span>Troco para quanto? *</span>
+          <input id="changeFor" type="text" inputmode="decimal" placeholder="Ex: R$ 50,00" />
+        </label>
+      </div>
+
+      <label class="field">
+        <span>Observações gerais</span>
+        <textarea id="notes" rows="3" placeholder="Ex: retirar açúcar, enviar guardanapos..."></textarea>
+      </label>
+
+      <dl class="totals">
+        <div><dt>Subtotal</dt><dd id="subtotal">R$ 0,00</dd></div>
+        <div><dt>Entrega</dt><dd id="deliveryFee">R$ 0,00</dd></div>
+        <div class="grand-total"><dt>Total</dt><dd id="grandTotal">R$ 0,00</dd></div>
+      </dl>
+
+      <button class="checkout" id="checkout" type="button" disabled>Enviar pedido no WhatsApp</button>
+      <p class="order-message" id="orderMessage" role="status"></p>
+    </aside>
+
+    <footer>
+      <strong>Camberth Cafés Especiais</strong>
+      <span>Demonstração de cardápio digital criada pela SiteProLocal.</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
