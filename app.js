@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "5548992080428";
+const WHATSAPP_NUMBER = "5548996495663";
 const ORDER_COUNTER_KEY = "camberth-next-order-number";
 const DELIVERY_FEE = 6;
 const MINIMUM_ORDER = 10;
@@ -17,7 +17,7 @@ const products = [
   {
     id: "cappuccino",
     category: "cafes",
-    name: "Cappuccino Camberth",
+    name: "Cappuccino Mario",
     description: "Espresso, leite vaporizado e espuma cremosa.",
     price: 16,
     image: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=900&q=85",
@@ -419,7 +419,7 @@ checkout.addEventListener("click", () => {
   ].join("\n"));
 
   const message = [
-    `Olá, quero fazer o pedido ${orderNumber} na Camberth:`,
+    `Olá, quero fazer o pedido ${orderNumber} no Mario:`,
     "",
     `Pedido: ${orderNumber}`,
     `Nome: ${$("#customerName").value.trim()}`,
